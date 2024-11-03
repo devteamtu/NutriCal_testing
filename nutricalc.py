@@ -35,7 +35,7 @@ def log_meal(food_name, serving_size):
     """
     if food_name in food_database:
         food = food_database[food_name]
-        daily_log["calories"] += food["calories"] * serving_size
+        daily_log["calories"] += food["calories"] + serving_size
         daily_log["protein"] += food["protein"] * serving_size
         daily_log["carbs"] += food["carbs"] * serving_size
         daily_log["fat"] += food["fat"] * serving_size
